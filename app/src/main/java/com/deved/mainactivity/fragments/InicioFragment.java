@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,8 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -26,10 +29,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class InicioFragment extends SupportMapFragment implements OnMapReadyCallback {
+public class InicioFragment extends Fragment  {
 
     private static final int REQUEST_PERMISSION_LOCATION = 200;
     private GoogleMap mMap;
+    MapView mMapView;
     private FusedLocationProviderClient mFusedLocationClient;
     private LocationRequest locationRequest;
     private LocationCallback locationCallback;
@@ -46,32 +50,16 @@ public class InicioFragment extends SupportMapFragment implements OnMapReadyCall
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-
-        getMapAsync(this);
-
-        return rootView;
-
-
+        View view = inflater.inflate(R.layout.fragment_inicio, container, false);
+         return view;
     }
-
 
     @Override
-    public void onMapReady(GoogleMap googleMap) {
-// Posicionar el mapa en una localización y con un nivel de zoom
-        LatLng latLng = new LatLng(36.679582, -5.444791);
-        // Un zoom mayor que 13 hace que el emulador falle, pero un valor deseado para
-        // callejero es 17 aprox.
-        float zoom = 13;
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        // Colocar un marcador en la misma posición
-        mMap.addMarker(new MarkerOptions().position(latLng));
-        // Más opciones para el marcador en:
-        // https://developers.google.com/maps/documentation/android/marker
 
-        // Otras configuraciones pueden realizarse a través de UiSettings
-        // UiSettings settings = getMap().getUiSettings();
     }
+
 }
 
