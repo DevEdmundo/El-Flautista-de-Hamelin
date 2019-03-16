@@ -1,14 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.InfografiaFragment">
+    tools:context=".fragments.InfografiaFragment"
+    android:background="@color/backgroud"
+    android:paddingVertical="25dp"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:text="Ingrese a un departamento"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
-</FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/peru"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayacucho"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lima"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Junin"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
