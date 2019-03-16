@@ -8,4 +8,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">EasyRecicler</string>
+    <string name="olvidePass">Me olvidé mi contraseña</string>
+    <string name="registrarse">Registrarme</string>
+    <string name="txt_ingresar">ingresar</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Contraseña</string>
 </resources>

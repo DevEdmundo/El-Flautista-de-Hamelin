@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#689F38</color>
     <color name="colorAccent">#CDDC39</color>
     <color name="colorBlack">#000000</color>
+    <color name="backgroud">#cddc39</color>
+    <color name="colorButton">#3c903c</color>
+    <color name="colorCajaTexto">#f2fefc</color>
+    <color name="rectangle">#4caf50</color>
+    <color name="colorWhite">#fff</color>
 </resources>
