@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 import com.deved.mainactivity.R;
 
-
 public class InfografiaFragment extends Fragment {
+
 
 
     public InfografiaFragment() {

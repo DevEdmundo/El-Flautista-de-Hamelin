@@ -6,11 +6,9 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.deved.mainactivity.fragments.AjustesFragment;
 import com.deved.mainactivity.fragments.InfografiaFragment;
-import com.deved.mainactivity.fragments.InicioFragment;
 import com.deved.mainactivity.fragments.OfertasFragment;
 import com.deved.mainactivity.interfaces.IMainActivity;
 import com.deved.mainactivity.util.SessionManager;
