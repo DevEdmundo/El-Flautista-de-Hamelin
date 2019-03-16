@@ -14,4 +14,10 @@
     <string name="txt_ingresar">ingresar</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Contraseña</string>
+
+
+
+
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD0MmROnBhn6VxKrLl_EAbLc5k5kkMIIoY</string>
 </resources>
