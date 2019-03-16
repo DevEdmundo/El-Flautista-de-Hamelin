@@ -9,6 +9,7 @@ import android.view.MenuItem;
 
 import com.deved.mainactivity.fragments.AjustesFragment;
 import com.deved.mainactivity.fragments.InfografiaFragment;
+import com.deved.mainactivity.fragments.InicioFragment;
 import com.deved.mainactivity.fragments.OfertasFragment;
 import com.deved.mainactivity.interfaces.IMainActivity;
 import com.deved.mainactivity.util.SessionManager;
