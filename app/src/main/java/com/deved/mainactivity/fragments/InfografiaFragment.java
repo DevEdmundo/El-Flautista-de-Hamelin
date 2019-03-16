@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 
 import com.deved.mainactivity.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class InfografiaFragment extends Fragment {
 
 
