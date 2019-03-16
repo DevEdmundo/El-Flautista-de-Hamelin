@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class InfografiaFragment extends Fragment implements OnMapReadyCallback {
+public class InfografiaFragment extends Fragment  {
 
     private View rootView;
     private MapView mapView;
@@ -35,27 +35,16 @@ public class InfografiaFragment extends Fragment implements OnMapReadyCallback {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        rootView = inflater.inflate(R.layout.fragment_inicio, container, false);
-        return rootView;
+        View view = inflater.inflate(R.layout.fragment_infografia, container, false);
+        return view;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mapView = rootView.findViewById(R.id.map);
-        if (mapView != null) {
-            mapView.onCreate(null);
-            mapView.onResume();
-            mapView.getMapAsync(this);
-        }
+
     }
 
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-    gMap = googleMap;
-        LatLng place = new LatLng(-12.091069, -76.979845);
-        gMap.addMarker(new MarkerOptions().position(place).title("Tu ubicación"));
-        gMap.moveCamera(CameraUpdateFactory.newLatLng(place));
-    }
+
 }
