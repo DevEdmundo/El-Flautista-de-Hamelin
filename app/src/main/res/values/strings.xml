@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MainActivity</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Infografia</string>
+    <string name="title_notifications">Ofertas</string>
+    <string name="title_notifications2">Ajustes</string>
+    <string name="servicio_descripcion">Detalle de servicio</string>
 </resources>
