@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.InfografiaFragment"
     android:background="@color/backgroud"
-    android:paddingVertical="25dp"
+    android:paddingVertical="15dp"
     android:paddingHorizontal="10dp"
     android:orientation="vertical">
 
@@ -29,55 +29,12 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="9"
+        android:id="@+id/recycler_anuncios"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9"
-        android:orientation="vertical"
-        android:layout_gravity="center_horizontal">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/peru"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ayacucho"
-                android:textSize="18dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="25dp"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lima"
-                android:textSize="18dp"
-                android:layout_gravity="center"
-                android:layout_marginRight="40dp"
-                android:layout_marginTop="50dp"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Junin"
-                android:textSize="18dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="30dp"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                />
-        </FrameLayout>
-    </LinearLayout>
+        />
 
 </LinearLayout>
